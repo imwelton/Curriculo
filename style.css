@@ -8,10 +8,11 @@ header{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 45px;
+    width: 100%;
 }
-footer{
-    padding-top: 20px;
-    padding-bottom: 30px;
+header nav{
+    display: flex;
+    justify-content: center;
 }
 header nav a{
     background-color: black;
@@ -23,10 +24,25 @@ header nav a{
     text-decoration: none;
     border-right:3px solid #86929e;
     border-bottom: 4px solid #86929e;
+    margin:10px; 
 }
+
+@media (max-width: 420px) {
+    header nav {
+      flex-direction: column; /* Altera para coluna quando a tela for pequena */
+      align-items: center; /* Centraliza os links verticalmente */
+    }
+  }
+footer{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
 .container-geral{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .container-esquerda{
     width: 40%; 
@@ -43,6 +59,16 @@ header nav a{
     border: 5px solid #747070;
     padding: 10px;
     word-wrap: break-word;
+}
+
+@media(max-width: 650px){
+    .container-esquerda{
+        width: 100%;
+    }
+    .container-direita{
+        width: 100%;
+        margin-right: 0px;
+    }
 }
 
 .secao-esquerda h2 {
@@ -96,25 +122,33 @@ header nav a{
 }
 
 #dominancia{
-    width: 150px;
+    width: 30%;
     height: 15px; /* Ajuste conforme necessário */
     background-color: #007bff; /* Cor de fundo da barra */
 }
 
 #influencia{
-    width: 170px;
+    width: 35%;
     height: 15px; /* Ajuste conforme necessário */
     background-color: #ff00aa; /* Cor de fundo da barra */
 }
 
 #estabilidade{
-    width: 190px;
+    width: 45%;
     height: 15px; /* Ajuste conforme necessário */
     background-color: #00ff22; /* Cor de fundo da barra */
 }
 
 #cautela{
-    width: 180px;
+    width: 40%;
     height: 15px; /* Ajuste conforme necessário */
     background-color: #ff0000; /* Cor de fundo da barra */
+}
+
+#Links{
+    font-size: 20px;
+}
+
+#Links p a{
+    color: #00ff22;
 }
