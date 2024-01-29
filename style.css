@@ -122,25 +122,25 @@ footer{
 }
 
 #dominancia{
-    width: 30%;
+    width: 70%;
     height: 15px; /* Ajuste conforme necessário */
     background-color: #007bff; /* Cor de fundo da barra */
 }
 
 #influencia{
-    width: 35%;
+    width: 80%;
     height: 15px; /* Ajuste conforme necessário */
     background-color: #ff00aa; /* Cor de fundo da barra */
 }
 
 #estabilidade{
-    width: 45%;
+    width: 90%;
     height: 15px; /* Ajuste conforme necessário */
     background-color: #00ff22; /* Cor de fundo da barra */
 }
 
 #cautela{
-    width: 40%;
+    width: 80%;
     height: 15px; /* Ajuste conforme necessário */
     background-color: #ff0000; /* Cor de fundo da barra */
 }
